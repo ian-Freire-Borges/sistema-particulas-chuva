@@ -44,7 +44,7 @@ O emissor distribuído em uma área acima da cena, a aceleração para baixo e o
 
 ## Experimento controlado
 
-Selecione cada intensidade, aguarde alguns segundos e capture a tela. Compare a legibilidade e, usando o painel de desempenho do navegador, a taxa de quadros no computador de apresentação. As configurações e expectativas são:
+As capturas abaixo mostram as três intensidades com o vento em zero. As configurações são:
 
 | Configuração | Máximo | Emissão | Vida | Expectativa visual |
 |---|---:|---:|---|---|
@@ -52,11 +52,33 @@ Selecione cada intensidade, aguarde alguns segundos e capture a tela. Compare a 
 | Intermediária | 450 | 220/s | 1,8–2,3 s | Chuva perceptível sem cobrir toda a cena |
 | Alta | 1200 | 750/s | 1,8–2,3 s | Chuva densa, com maior custo |
 
-O desempenho depende do dispositivo e deve ser medido. Mais partículas nem sempre melhoram a leitura: podem esconder o restante da cena. A configuração intermediária é uma escolha inicial para demonstração, a confirmar após o teste. Registre onde o desempenho começa a cair e inclua três capturas reais; não há medições ou capturas inventadas nesta entrega.
+### Baixa
+
+![Cena 3D com intensidade baixa](docs/imagens/baixa.png)
+
+### Intermediária
+
+![Cena 3D com intensidade intermediária](docs/imagens/intermediaria.png)
+
+### Alta
+
+![Cena 3D com intensidade alta](docs/imagens/alta.png)
+
+A intensidade intermediária torna a chuva perceptível sem prejudicar a visualização da casa. A alta produz maior sobreposição; portanto, aumentar a quantidade nem sempre melhora a leitura. A intensidade alta também exige atualizar e desenhar mais partículas. Não foram medidos quadros por segundo ou uso de CPU e GPU, então não é possível afirmar em qual intensidade houve queda de desempenho. A comparação deve ser medida no dispositivo de apresentação.
 
 ## Integração proposta com A3
 
-O efeito poderia aparecer em uma área externa, comunicando clima chuvoso e movimento. O usuário altera o vento e a intensidade pelos controles. Em uma integração futura, uma mudança de clima poderia iniciar o efeito ou alterar sua intensidade. Em uma simulação ou experiência de RV, a chuva pode reforçar a sensação de ambiente dinâmico. A limitação atual é a ausência de colisão com objetos e de integração real com o A3. Plano B: reduzir a intensidade ou usar uma animação simples de fundo se o desempenho for insuficiente.
+**Onde o efeito aparece na cena?** Na área externa da cena 3D, caindo sobre o terreno e ao redor da casa.
+
+**O que o usuário deve perceber?** A chuva caindo e mudando de intensidade e direção conforme os controles são ajustados.
+
+**O efeito responde a uma interação?** Sim. O usuário pode escolher a intensidade da chuva e ajustar o vento.
+
+**Qual evento inicia ou altera o sistema?** A chuva começa quando a aplicação é aberta. Ela é alterada quando o usuário muda a intensidade ou o vento nos controles.
+
+**Como se relaciona com RV, RA, RM ou simulação?** Relaciona-se com simulação, pois representa o comportamento da chuva em um ambiente tridimensional. O efeito pode ser adaptado futuramente para uma experiência de realidade virtual.
+
+Essas respostas descrevem o protótipo atual; a integração com o projeto A3 ainda será definida pelo grupo.
 
 ## Fechamento
 
