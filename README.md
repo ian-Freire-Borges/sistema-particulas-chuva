@@ -62,6 +62,4 @@ O efeito poderia aparecer em uma área externa, comunicando clima chuvoso e movi
 
 As gotas em movimento, com velocidades e trajetórias diferentes, comunicam a evolução da chuva e permitem interação. Uma imagem estática não mostra essa mudança ao longo do tempo da mesma forma.
 
-## Referências e observações
 
-O enunciado indica o vídeo “Unity 3D - Aula 37 - Introdução a Sistemas de Partículas”, do CFB Cursos, e “Mecânica - Sistemas de Partículas”, do e-Aulas USP. As três decisões técnicas especificamente observadas no vídeo devem ser registradas após assisti-lo; elas não foram atribuídas ao vídeo sem verificação. Ferramentas e bibliotecas: React, Bootstrap, Vite e API Canvas do navegador. Não são usados assets externos.
