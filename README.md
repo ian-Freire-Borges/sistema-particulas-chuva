@@ -1,6 +1,6 @@
 # Sistema de partículas: chuva
 
-Protótipo para a Aula 11 de Computação Gráfica e Realidade Virtual. Feito com React, Bootstrap e Canvas 2D. A cena representa chuva e permite ajustar intensidade e vento. É uma representação bidimensional, não uma cena 3D completa.
+Protótipo para a Aula de Computação Gráfica e Realidade Virtual. Feito com React, Bootstrap e Canvas 2D. A cena representa chuva e permite ajustar intensidade e vento. É uma representação bidimensional, não uma cena 3D completa.
 
 ## Executar
 
