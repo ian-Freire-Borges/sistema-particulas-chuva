@@ -16,7 +16,7 @@ https://sistema-particulas-chuva.vercel.app/
 
 As decisões abaixo são sugestões plausíveis para uma aula introdutória sobre partículas. Elas não foram confirmadas como observações do vídeo e devem ser conferidas ao assisti-lo.
 
-| Decisão técnica sugerida | Por que é necessária |
+| Decisão técnica | Por que é necessária |
 |---|---|
 | Configurar o emissor e a taxa de emissão. | Define onde as partículas surgem e quantas são criadas ao longo do tempo, permitindo controlar a densidade do efeito. |
 | Definir o tempo de vida e limitar a quantidade de partículas. | Evita que partículas permaneçam indefinidamente na cena e que o consumo de processamento e memória cresça sem controle. |
