@@ -66,6 +66,8 @@ As capturas abaixo mostram as três intensidades com o vento em zero. As configu
 
 A intensidade intermediária torna a chuva perceptível sem prejudicar a visualização da casa. A alta produz maior sobreposição; portanto, aumentar a quantidade nem sempre melhora a leitura. A intensidade alta também exige atualizar e desenhar mais partículas. Não foram medidos quadros por segundo ou uso de CPU e GPU, então não é possível afirmar em qual intensidade houve queda de desempenho. A comparação deve ser medida no dispositivo de apresentação.
 
+Como estimativa técnica, a configuração baixa deve exigir menos processamento, a intermediária oferece um equilíbrio entre aparência e custo, e a alta tende a ser a mais exigente. A recomendação para a demonstração é a intermediária. Essas conclusões sobre custo são previsões baseadas na quantidade de partículas, não resultados de uma medição.
+
 ## Integração proposta com A3
 
 **Onde o efeito aparece na cena?** Na área externa da cena 3D, caindo sobre o terreno e ao redor da casa.
@@ -83,5 +85,11 @@ Essas respostas descrevem o protótipo atual; a integração com o projeto A3 ai
 ## Fechamento
 
 As gotas em movimento, com velocidades e trajetórias diferentes, comunicam a evolução da chuva e permitem interação. Uma imagem estática não mostra essa mudança ao longo do tempo da mesma forma.
+
+## Referências e ferramentas
+
+- CFB Cursos. [Unity 3D — Aula 37 — Introdução a Sistemas de Partículas](https://www.youtube.com/watch?v=1qBcNkvYNbs). Vídeo principal indicado no exercício.
+- e-Aulas USP. [Mecânica — Tema 15 — Sistemas de Partículas](https://eaulas.usp.br/portal/video.action?idPlaylist=6999). Material complementar indicado no exercício.
+- [Three.js](https://threejs.org/), [React](https://react.dev/), [Bootstrap](https://getbootstrap.com/), [Vite](https://vite.dev/) e WebGL: bibliotecas e tecnologias usadas no protótipo.
 
 
