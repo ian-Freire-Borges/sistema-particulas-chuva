@@ -1,6 +1,6 @@
 # Sistema de partículas: chuva
 
-Protótipo para a Aula de Computação Gráfica e Realidade Virtual. Feito com React, Bootstrap e Canvas 2D. A cena representa chuva e permite ajustar intensidade e vento. É uma representação bidimensional, não uma cena 3D completa.
+Protótipo para a Aula de Computação Gráfica e Realidade Virtual. Feito com React, Bootstrap e Three.js. A cena representa chuva e permite ajustar intensidade e vento. A cena é tridimensional, com câmera controlável e objetos 3D.
 
 ## Executar
 
@@ -28,19 +28,19 @@ Protótipo para a Aula de Computação Gráfica e Realidade Virtual. Feito com R
 | Item | Decisão |
 |---|---|
 | Fenômeno | Chuva |
-| Emissor | Linha horizontal no topo do canvas |
+| Emissor | Área horizontal acima da cena 3D |
 | Quantidade máxima | 150, 450 ou 1200, conforme intensidade |
 | Taxa de emissão | 60, 220 ou 750 gotas por segundo |
 | Tempo de vida | Aleatório entre 1,8 e 2,3 segundos; a gota também pode sair da cena antes |
-| Velocidade inicial | Entre 50% e 90% da altura da cena por segundo |
-| Força | Aceleração vertical de 120 px/s²; vento horizontal controlável |
-| Tamanho | Traço de 8 a 18 pixels |
+| Velocidade inicial | Entre 4 e 6 unidades de mundo por segundo |
+| Força | Aceleração vertical de 3 unidades/s²; vento horizontal controlável |
+| Tamanho | Traço de 0,22 unidade de mundo |
 | Cor e transparência | Azul claro translúcido |
 | Remoção | Ao expirar ou sair dos limites da cena |
 | Controle | Intensidade e vento |
 | Função no A3 | Proposta: criar atmosfera de chuva em uma área externa |
 
-O emissor distribuído no alto, a aceleração para baixo e os traços finos sugerem gotas caindo. A variação de velocidade e tamanho reduz a aparência uniforme; a transparência permite sobreposição. O vento altera a trajetória e torna o fenômeno interativo.
+O emissor distribuído em uma área acima da cena, a aceleração para baixo e os traços finos sugerem gotas caindo. A variação de velocidade e tamanho reduz a aparência uniforme; a transparência permite sobreposição. O vento altera a trajetória e torna o fenômeno interativo.
 
 ## Experimento controlado
 
@@ -56,7 +56,7 @@ O desempenho depende do dispositivo e deve ser medido. Mais partículas nem semp
 
 ## Integração proposta com A3
 
-O efeito poderia aparecer em uma área externa, comunicando clima chuvoso e movimento. O usuário altera o vento e a intensidade pelos controles. Em uma integração futura, uma mudança de clima poderia iniciar o efeito ou alterar sua intensidade. Em uma simulação ou experiência de RV, a chuva pode reforçar a sensação de ambiente dinâmico. A limitação atual é o desenho 2D sem profundidade, colisão ou integração real com o A3. Plano B: reduzir a intensidade ou usar uma animação simples de fundo se o desempenho for insuficiente.
+O efeito poderia aparecer em uma área externa, comunicando clima chuvoso e movimento. O usuário altera o vento e a intensidade pelos controles. Em uma integração futura, uma mudança de clima poderia iniciar o efeito ou alterar sua intensidade. Em uma simulação ou experiência de RV, a chuva pode reforçar a sensação de ambiente dinâmico. A limitação atual é a ausência de colisão com objetos e de integração real com o A3. Plano B: reduzir a intensidade ou usar uma animação simples de fundo se o desempenho for insuficiente.
 
 ## Fechamento
 
