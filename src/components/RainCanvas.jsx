@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { updateParticles, drawParticles } from '../particles/engine';
 export default function RainCanvas({ settings }) {
   const canvas = useRef(null); const settingsRef = useRef(settings); settingsRef.current = settings;

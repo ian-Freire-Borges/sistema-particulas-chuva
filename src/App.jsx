@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Controls from './components/Controls';
 import RainCanvas from './components/RainCanvas';
 const presets = { baixa: { max: 150, rate: 60 }, media: { max: 450, rate: 220 }, alta: { max: 1200, rate: 750 } };
