@@ -4,7 +4,7 @@ Protótipo para a Aula de Computação Gráfica e Realidade Virtual. Feito com R
 
 ## Executar
 
-É necessário Node.js. No diretório do projeto execute `npm install` e depois `npm run dev`. Abra o endereço exibido no terminal. Para gerar a versão de produção, execute `npm run build`.
+https://sistema-particulas-chuva.vercel.app/
 
 ## Organização
 
