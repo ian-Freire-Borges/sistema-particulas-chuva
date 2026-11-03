@@ -64,21 +64,22 @@ As capturas abaixo mostram as três intensidades com o vento em zero. As configu
 
 ![Cena 3D com intensidade alta](docs/imagens/alta.png)
 
-A intensidade intermediária torna a chuva perceptível sem prejudicar a visualização da casa. A alta produz maior sobreposição; portanto, aumentar a quantidade nem sempre melhora a leitura. A intensidade alta também exige atualizar e desenhar mais partículas. Não foram medidos quadros por segundo ou uso de CPU e GPU, então não é possível afirmar em qual intensidade houve queda de desempenho. A comparação deve ser medida no dispositivo de apresentação.
-
-Como estimativa técnica, a configuração baixa deve exigir menos processamento, a intermediária oferece um equilíbrio entre aparência e custo, e a alta tende a ser a mais exigente. A recomendação para a demonstração é a intermediária. Essas conclusões sobre custo são previsões baseadas na quantidade de partículas, não resultados de uma medição.
+| Pergunta | Resposta |
+|---|---|
+| Em qual configuração o efeito ficou mais legível? | Na intermediária. A chuva fica perceptível e a casa continua visível. |
+| Em qual configuração o desempenho começou a cair? | Não foi medido, então não é possível afirmar. A intensidade alta tende a exigir mais processamento por ter mais partículas; isso é uma estimativa técnica. |
+| Aumentar a quantidade sempre melhorou o resultado? | Não. Na intensidade alta, a sobreposição das gotas pode dificultar a visualização da cena. |
+| Qual configuração você escolheria para a demonstração? Por quê? | A intermediária, pois equilibra a visibilidade da chuva com a leitura dos objetos da cena. |
 
 ## Integração proposta com A3
 
-**Onde o efeito aparece na cena?** Na área externa da cena 3D, caindo sobre o terreno e ao redor da casa.
-
-**O que o usuário deve perceber?** A chuva caindo e mudando de intensidade e direção conforme os controles são ajustados.
-
-**O efeito responde a uma interação?** Sim. O usuário pode escolher a intensidade da chuva e ajustar o vento.
-
-**Qual evento inicia ou altera o sistema?** A chuva começa quando a aplicação é aberta. Ela é alterada quando o usuário muda a intensidade ou o vento nos controles.
-
-**Como se relaciona com RV, RA, RM ou simulação?** Relaciona-se com simulação, pois representa o comportamento da chuva em um ambiente tridimensional. O efeito pode ser adaptado futuramente para uma experiência de realidade virtual.
+| Pergunta | Resposta |
+|---|---|
+| Onde o efeito aparece na cena? | Na área externa da cena 3D, caindo sobre o terreno e ao redor da casa. |
+| O que o usuário deve perceber? | A chuva caindo e mudando de intensidade e direção conforme os controles são ajustados. |
+| O efeito responde a uma interação? | Sim. O usuário pode escolher a intensidade da chuva e ajustar o vento. |
+| Qual evento inicia ou altera o sistema? | A chuva começa quando a aplicação é aberta. Ela é alterada quando o usuário muda a intensidade ou o vento nos controles. |
+| Como se relaciona com RV, RA, RM ou simulação? | Relaciona-se com simulação, pois representa o comportamento da chuva em um ambiente tridimensional. O efeito pode ser adaptado futuramente para uma experiência de realidade virtual. |
 
 Essas respostas descrevem o protótipo atual; a integração com o projeto A3 ainda será definida pelo grupo.
 
